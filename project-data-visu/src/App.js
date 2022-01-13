@@ -1,5 +1,5 @@
 import './App.css';
-import { MyMap } from './components/map/index';
+import MyMap  from './components/MyMap';
 // import * as d3 from "d3";
 
 function App() {

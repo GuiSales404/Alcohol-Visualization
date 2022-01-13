@@ -1,14 +1,14 @@
 import ReactDOMServer from 'react-dom/server';
 
 import { MapContainer, GeoJSON } from 'react-leaflet'; 
+import PopupMap from '../PopupMap'
 
-import { PopupMap } from '../popUpMap'
 import mapData from '../../data/countries.json';
 import dados from '../../data/gapminder_alcohol.json';
 import 'leaflet/dist/leaflet.css';
 import './styles.css';
 
-export function MyMap(){
+export default function MyMap(){
     const countryStyle = {
         fillColor: "red",
         fillOpacity: "0.8", //just number between 0 and 1 
@@ -22,6 +22,7 @@ export function MyMap(){
 
 
     function highlightFeature(event) {
+        console.log("foi")
         event.target.setStyle({
         weight: 5,
         color: '#666',
