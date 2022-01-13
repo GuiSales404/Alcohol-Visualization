@@ -1,0 +1,76 @@
+.App{
+  background-color: #101010;
+}
+
+.introPage{
+  background-color: #101010;
+  height: 100vh;
+}
+
+.Title{
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+	text-align: center;
+  text-shadow: 1px 1px 1px #303030;
+  color: #950101;
+  padding: 0.02px;
+
+}
+
+.alcohol{
+  color: #FF0000; 
+}
+
+.nomesAlunos{
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #707070;
+  font-family: "Oregela One";
+  font-weight: 100;	
+  text-align: right;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.Subtitle{
+  font-family: "Lucida Grande";
+	font-size: 12px;
+	font-weight: lighter;
+	font-variant: normal;
+	text-transform: uppercase;
+  text-shadow: 1px 1px 1px #303030;
+	color: #666666;
+	text-align: center!important;
+	letter-spacing: 0.3em;
+}
+
+.turma {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #707070;
+  font-family: "Lucida Grande";
+  font-weight: 100;	
+  text-align: right;
+  text-shadow: 1px 1px 1px #303030;
+  padding: 10px;
+  margin-right: 90px;
+  margin-top: 90px;
+}
+
+.foot-bar{
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to bottom, #101010 , rgb(65, 61, 61));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+}
+
+
