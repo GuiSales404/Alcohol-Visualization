@@ -8,58 +8,76 @@ import dados from '../../data/gapminder_alcohol.json';
 import 'leaflet/dist/leaflet.css';
 import './styles.css';
 
+const COLOR_0 = "#CFEAFF";
+const COLOR_1 = "#75B3F0";
+const COLOR_75 = "#3570BD";
+const COLOR_140 = "#143670";
+
 export default function MyMap(){
-    const countryStyle = {
-        fillColor: "red",
-        fillOpacity: "0.8", //just number between 0 and 1 
-        color: "white",
-        weight: 1,   
-    };
+    
+    const countryStyle  = (feature) => {
+      const {arrayCountries} = dados;
 
-    function printMessageToConsole (event){
-        console.log("clicked");
-    };
+       const countryName = feature.properties.ADMIN;
 
+       const arrayInfosAlcohol = filterCountry(arrayCountries, countryName);
+        return {
+            fillColor: getColor(arrayInfosAlcohol[0]?.alcconsumption),
+            fillOpacity: "0.8", //just number between 0 and 1 
+            color: "white",
+            weight: 1,   
+        }
+    }
+    
 
-    function highlightFeature(event) {
-        console.log("foi")
-        event.target.setStyle({
-        weight: 5,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.7
-        });
-       }
+    function getColor(infoConsumo) {
+       
+        if(infoConsumo){
+            return infoConsumo < 1
+            ? COLOR_0
+            : infoConsumo >= 2 && infoConsumo < 4
+            ? COLOR_1
+            : infoConsumo >= 4 && infoConsumo < 6
+            ? COLOR_75
+            : infoConsumo >= 75
+            ? COLOR_0
+            : "#CFEAFF";
+        }
+        return "#CFEAFF"; //se for vazio, vai renderizar essa cor padrao;
+      
+      }
+    
+  function filterCountry(arrayCountries, countryName){
+
+    const arrayInfosAlcohol = arrayCountries.filter(currentCountry => {
+        return currentCountry.country === countryName;
+    });
+
+    return arrayInfosAlcohol;
+  }
 
    function onEachCountry (country, layer) {
        const {arrayCountries} = dados;
 
-       const countryName = country.properties.ADMIN;
-      
-       const arrayInfosAlcohol = arrayCountries.filter(currentCountry => {
-           return currentCountry.country === countryName;
-       });
+       const arrayInfosAlcohol = filterCountry(arrayCountries, countryName);
 
-      const infosAlcohol = arrayInfosAlcohol[0]
+       const countryName = country.properties.ADMIN;
+
+       const infosAlcohol = arrayInfosAlcohol[0]
       
-       console.log("infosAlcohol", infosAlcohol, "countryName", countryName);
-        
-/*         layer.bindPopup(countryName, infosAlcohol?.alcconsumption, infosAlcohol?.employrate, infosAlcohol?.incomeperperson );
- */
         const popupContent = ReactDOMServer.renderToString(
             <PopupMap countryName={countryName} infosAlcohol={infosAlcohol} />
           );
-          layer.bindPopup(popupContent);
+
+        layer.bindPopup(popupContent);
 
 
-        layer.on('loading', {
+     /*    layer.on('loading', {
             click: printMessageToConsole,
             mouseover: highlightFeature,
           
-        });
-      /*   layer.on('mouseover', {
-            mouseover: changeColorCountry,
         }); */
+
     };
         return(
             <div>
