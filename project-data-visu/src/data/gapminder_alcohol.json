@@ -665,7 +665,7 @@
       "urbanrate": 47.88
     },
     {
-      "country": "Hong Kong, China",
+      "country": "Hong Kong",
       "alcconsumption": null,
       "incomeperperson": 35536.07247,
       "suicideper100th": null,
@@ -793,7 +793,7 @@
       "urbanrate": 43.84
     },
     {
-      "country": "Korea, Dem. Rep.",
+      "country": "North Korea",
       "alcconsumption": null,
       "incomeperperson": null,
       "suicideper100th": 4.735673428,
@@ -801,7 +801,7 @@
       "urbanrate": 62.68
     },
     {
-      "country": "Korea, Rep.",
+      "country": "South Korea",
       "alcconsumption": 19.15,
       "incomeperperson": 16372.49978,
       "suicideper100th": 22.40456,
@@ -897,7 +897,7 @@
       "urbanrate": 82.44
     },
     {
-      "country": "Macao, China",
+      "country": "Macao",
       "alcconsumption": null,
       "incomeperperson": 33923.31387,
       "suicideper100th": null,
@@ -905,7 +905,7 @@
       "urbanrate": 100
     },
     {
-      "country": "Macedonia, FYR",
+      "country": "Macedonia",
       "alcconsumption": 8.94,
       "incomeperperson": 2221.185664,
       "suicideper100th": 7.876878262,

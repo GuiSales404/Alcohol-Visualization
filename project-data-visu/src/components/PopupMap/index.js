@@ -5,9 +5,9 @@ export default function PopupMap({ countryName,  infosAlcohol}) {
           countryName
         }`}</p>
         {infosAlcohol ? <>
-            <p>{`Consumo de álcool: ${
+            <p>{`Média consumo de álcool: ${
           infosAlcohol?.alcconsumption
-        }`}</p>
+        } L/Adulto`}</p>
           <p>{`Taxa de suicídio a cada 100hab: ${
           infosAlcohol?.suicideper100th
         }`}</p>

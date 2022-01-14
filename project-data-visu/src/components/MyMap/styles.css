@@ -8,3 +8,8 @@
     font-size: 15px;
     font-family: "Oregela One";
 }
+
+.mapContainer{
+    height: 80vh;
+    width: 80vw; 
+}

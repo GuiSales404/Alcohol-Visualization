@@ -83,8 +83,9 @@ export default function MyMap(){
             <div>
                 <h1 style={{ textAlign: "center" }}>Alcohol Map</h1>
                 <MapContainer style={{ height: "80vh"}}
-                 zoom={2}
+                 zoom={3}
                  center={[20, 100]}
+                 minZoom={3}
                 >
                     <GeoJSON style={countryStyle} 
                             data={mapData.features} 
