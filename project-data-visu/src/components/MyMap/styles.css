@@ -1,3 +1,10 @@
 .leaflet-container{
     background-color:#101010;
 }
+
+.leaflet-popup-content-wrapper{
+    background-color: #322F3D;
+    color: white;
+    font-size: 15px;
+    font-family: "Oregela One";
+}

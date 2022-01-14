@@ -1,17 +1,17 @@
 export default function PopupMap({ countryName,  infosAlcohol}) {
     return (
       <div>
-        <p>{`Teste ${
+        <p>{`Nome do país: ${
           countryName
         }`}</p>
         {infosAlcohol ? <>
-            <p>{`Teste 1 ${
+            <p>{`Consumo de álcool: ${
           infosAlcohol?.alcconsumption
         }`}</p>
-          <p>{`Teste ${
-          infosAlcohol?.incomeperperson
+          <p>{`Taxa de suicídio a cada 100hab: ${
+          infosAlcohol?.suicideper100th
         }`}</p>
-        </> : <p>Sem dados !</p>
+        </> : <p>Sem dados!</p>
          }
           
      

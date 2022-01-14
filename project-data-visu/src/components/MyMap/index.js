@@ -8,10 +8,10 @@ import dados from '../../data/gapminder_alcohol.json';
 import 'leaflet/dist/leaflet.css';
 import './styles.css';
 
-const COLOR_0 = "#CFEAFF";
-const COLOR_1 = "#75B3F0";
-const COLOR_75 = "#3570BD";
-const COLOR_140 = "#143670";
+const COLOR_0 = "#FF0000";
+const COLOR_1 = "#D80000";
+const COLOR_75 = "#950101";
+const COLOR_140 = "#3D0000";
 
 export default function MyMap(){
     
@@ -33,17 +33,17 @@ export default function MyMap(){
     function getColor(infoConsumo) {
        
         if(infoConsumo){
-            return infoConsumo < 1
+            return infoConsumo < 5
             ? COLOR_0
-            : infoConsumo >= 2 && infoConsumo < 4
+            : infoConsumo >= 5 && infoConsumo < 8
             ? COLOR_1
-            : infoConsumo >= 4 && infoConsumo < 6
+            : infoConsumo >= 8 && infoConsumo < 15
             ? COLOR_75
-            : infoConsumo >= 75
-            ? COLOR_0
-            : "#CFEAFF";
+            : infoConsumo >= 15
+            ? COLOR_140
+            : "#3D0000";
         }
-        return "#CFEAFF"; //se for vazio, vai renderizar essa cor padrao;
+        return "#DDDDDD"; //se for vazio, vai renderizar essa cor padrao;
       
       }
     
@@ -59,9 +59,9 @@ export default function MyMap(){
    function onEachCountry (country, layer) {
        const {arrayCountries} = dados;
 
-       const arrayInfosAlcohol = filterCountry(arrayCountries, countryName);
-
        const countryName = country.properties.ADMIN;
+
+       const arrayInfosAlcohol = filterCountry(arrayCountries, countryName);
 
        const infosAlcohol = arrayInfosAlcohol[0]
       
