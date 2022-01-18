@@ -1,6 +1,6 @@
 import './App.css';
 import MyMap  from './components/MyMap';
-import BarChart from './components/BarChart/index.Js';
+import BarChart from './components/BarChart';
 
 function App() {
   return (
