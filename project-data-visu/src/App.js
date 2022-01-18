@@ -1,6 +1,6 @@
 import './App.css';
 import MyMap  from './components/MyMap';
-// import * as d3 from "d3";
+import BarChart from './components/BarChart/index.Js';
 
 function App() {
   return (
@@ -24,6 +24,11 @@ function App() {
         {/* <div className="foot-bar"> SETA </div>  */}
         </div>
       <div className="dotsVisu"> <MyMap/> </div>
+      <div className="charts">
+        <div className="barChart">
+          <BarChart/>
+        </div>
+      </div>
     </div>
   );
 }
