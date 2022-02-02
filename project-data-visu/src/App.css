@@ -4,11 +4,11 @@ body {
 }
 
 .App{
-  background-color: #101010;
+  background-color: white
 }
 
 .introPage{
-  background-color: #101010;
+  background-color:white;
   height: 100vh;
 }
 
@@ -78,4 +78,34 @@ body {
   height: 60px;
 }
 
+.graphs-mru{
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
 
+.text-image-mru{
+  width: 35vh;
+  margin-right: 15px;
+  padding: 10px;
+  margin: 5px;
+  font-family: "Lucida Grande";
+}
+
+.scroll-container {
+  display: block;
+  width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
