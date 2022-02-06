@@ -1,3 +1,7 @@
+# Sobre a inicialização do projeto
+Depois que tiver baixado o repositório para poder rodar localmente, baste ir na pasta project-data-visu e utilizar o comando <yarn start>, devido ao tamanho imenso do mapa,
+compilações sucessivas podem estorar o cache de memória do computador e derrubar a aplicação, mas como o projeto já esta finalizado, uma única execução é necessária.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
