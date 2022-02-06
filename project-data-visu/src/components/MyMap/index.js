@@ -23,7 +23,7 @@ export default function MyMap(){
        const arrayInfosAlcohol = filterCountry(arrayCountries, countryName);
         return {
             fillColor: getColor(arrayInfosAlcohol[0]?.alcconsumption),
-            fillOpacity: "0.8", //just number between 0 and 1 
+            fillOpacity: "0.8",  
             color: "white",
             weight: 1,   
         }
@@ -43,7 +43,7 @@ export default function MyMap(){
             ? COLOR_140
             : "#3D0000";
         }
-        return "#DDDDDD"; //se for vazio, vai renderizar essa cor padrao;
+        return "#DDDDDD";
       
       }
     
@@ -72,20 +72,16 @@ export default function MyMap(){
         layer.bindPopup(popupContent);
 
 
-     /*    layer.on('loading', {
-            click: printMessageToConsole,
-            mouseover: highlightFeature,
-          
-        }); */
-
     };
         return(
             <div>
                 <h1 style={{ textAlign: "center" }}>Alcohol Map</h1>
-                <MapContainer style={{ height: "80vh"}}
+                <MapContainer 
+                 style={{ height: "90vh"}}
                  zoom={3}
-                 center={[20, 100]}
+                 center={[0, 0]}
                  minZoom={3}
+                 
                 >
                     <GeoJSON style={countryStyle} 
                             data={mapData.features} 

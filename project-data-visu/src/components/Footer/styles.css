@@ -1,0 +1,191 @@
+.all-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    background-color: #DDDDDD;
+    font-family: 'Georgia';
+    padding: 10px;
+    justify-content: center;
+}
+
+.about-project{
+    width: 50%;
+    letter-spacing: 1px;
+}
+
+.upside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.downside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    align-items: center;
+}
+
+.students{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+/* Gui */
+.gui{
+    display: flex;
+    flex-direction: column;
+}
+
+.gui-git{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gui-git:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+.gui-linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gui-linkedin:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+/* Mruna */
+.mru{
+    display: flex;
+    flex-direction: column;
+}
+
+.mru-git{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mru-git:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+.mru-linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mru-linkedin:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+/* Luiza */
+.lu{
+    display: flex;
+    flex-direction: column;
+}
+
+.lu-git{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000000;
+}
+
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+.lu-git:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000000;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+.lu-linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lu-linkedin:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: red;
+    transition: 100ms;
+}
+
+.button{
+    background-color: #000000;
+    color: white;
+    width: 5vw;
+    height: 3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: 'Lucida Grande';
+}
+
+.button:hover{
+    background-color: #b9b9b9;
+    color: rgb(29, 29, 29);
+    width: 5vw;
+    height: 3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: 'Lucida Grande';
+    transition: 180ms;
+    cursor: pointer;
+}

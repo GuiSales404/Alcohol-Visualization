@@ -1,0 +1,111 @@
+.legend{
+    background-color: rgb(175, 175, 175);
+    width: 360px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.heat-colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-width: 2px;
+    border-color: black;
+}
+
+.heat-values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family:"Georgia";
+}
+
+.color-0{
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Georgia";
+}
+
+.color-1{
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Georgia";
+}
+
+.color-2{
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Georgia";
+}
+
+.color-3{
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Georgia";
+}
+
+.color-null{
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Georgia";
+}
+
+.title-legend{
+    display: flex;
+    justify-content: center;
+    font-family:"Georgia";
+}
+
+.bg-color-0{
+    background-color: #FF0000;
+    width:65px;
+    color: #FF0000;
+}
+
+.bg-color-1{
+    background-color: #D80000;
+    width:65px;
+    color: #D80000;
+}
+
+.bg-color-2{
+    background-color: #950101;
+    width:65px;
+    color: #950101;
+}
+
+.bg-color-3{
+    background-color: #3D0000;
+    width:65px;
+    color: #3D0000;
+}
+
+.bg-color-null{
+    background-color: #DDDDDD;
+    width:65px;
+    color: #DDDDDD;
+}
+
+.text-style{
+    font-size: 13px;
+    margin-top: 18px;
+}
