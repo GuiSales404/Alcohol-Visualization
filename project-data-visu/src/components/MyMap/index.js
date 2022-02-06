@@ -74,10 +74,10 @@ export default function MyMap(){
 
     };
         return(
-            <div>
-                <h1 style={{ textAlign: "center" }}>Alcohol Map</h1>
+            <div className='all-map'>
+                <h1 style={{ textAlign: "center", color: "#3D0000", fontFamily: "Lucida Grande", fontSize: "24", letterSpacing: "2px" }}>Mapa do Álcool</h1>
                 <MapContainer 
-                 style={{ height: "90vh"}}
+                 style={{ height: "90vh", width: "95vw"}}
                  zoom={3}
                  center={[0, 0]}
                  minZoom={3}

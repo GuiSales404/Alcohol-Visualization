@@ -163,19 +163,112 @@ body {
   justify-content: space-between;
 }
 
-.separate{
-  height: 35px;
-}
-
-.separate1{
-  height: 35px;
-}
-
-.separate2{
-  height: 35px;
-}
-
-
 .dotsVisu{
   height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.mapLegend{
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.intro-text{
+  color: black;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #303030;
+  text-align: center;
+}
+
+.intro-all{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote{
+  color: rgb(90, 90, 90);
+  font-size: 24px;
+  text-shadow: 1px 1px 1px #adadad;
+  text-align: center;
+  font-style: italic;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+.intro-russia{
+  background-color: #cf0e0e;
+  width: 50vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introGui-container{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.intro-gui-visu{
+  background-color: #cf0e0e;
+  width: 50vw;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-gui{
+  text-align: right;
+  color: black;
+  font-size: 20px;
+  width: 50vw;
+  font-family: 'Georgia';
+  padding: 50px;
+}
+
+.text-russia{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  width: 50vw;
+  font-family: 'Georgia';
+  padding: 50px;
+}
+
+.intro-final-container{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.intro-final{
+  background-color: #cf0e0e;
+  width: 50vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-introFinal{
+  text-align: right;
+  color: black;
+  font-size: 20px;
+  width: 50vw;
+  font-family: 'Georgia';
+  padding: 50px;
 }
